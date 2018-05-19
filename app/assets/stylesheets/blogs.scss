@@ -1,0 +1,214 @@
+@import "bootstrap";
+@import "font-awesome";
+@import "gritter";
+@import "shared_nav";
+@import "fonts";
+@import "animsition";
+
+@media (min-width: 48em) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  font-family:'forum';
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+body a {
+  transition-duration: .4s !important;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  bottom: 3rem;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 17rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+@media (min-width: 350px){
+  .carousel-caption h2 {
+    font-size: 1.4em;
+  }
+
+  .carousel-caption p {
+    font-size: .8em;
+  }
+    
+}
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-bottom: 1.25rem;
+  margin-bottom: 2rem;
+  border-bottom: .05rem solid #eee;
+}
+.blog-title {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 1.1rem;
+  color: #999;
+}
+
+@media (min-width: 40em) {
+  .blog-title {
+    font-size: 3.5rem;
+  }
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 1rem;
+  /*margin: 0 -1rem 1rem;*/
+}
+.sidebar-module-inset {
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: .25rem;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+  border-radius: 2rem;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 1rem;
+  margin-top:1rem;
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 1.7rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  margin-top:20px;
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+  }
+  
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+/***********************
+Custom Styles
+****************************/
+
+.pagination {
+  margin: 20px 0px !important;
+}
+
+.comment-card > .card{
+  margin-top: 15px;
+}
+
+.social-links li {
+  font-size: 2em;
+}
+
+.comment-attribution {
+  text-align: right;
+  font-style: italic;
+  font-size: .8em
+}
+
+.comment-name {
+  font-weight: bold;
+}
+
+.blog-radio {
+  font-size: .8em;
+}
+
+.new-form-check, .edit-form-check {
+  margin-left:23px;
+  display: inline-block;
+}
+
+.new-form-group, .edit-form-group {
+  margin-top:30px;
+  display: inline-block;
+}
+
+#hr-sidebar {
+  margin-top: 40px;
+}
+
+.title-hr {
+  width:20%;
+  margin-bottom: 10px;
+  text-align: left;
+  float:left;
+  }
+
+.breadcrumb {
+  padding: 0.25rem .5rem;
+}
+
+.comment-form-group {
+  margin-top: 100px;
+}

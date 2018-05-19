@@ -1,0 +1,19 @@
+<div class="align-left resume-items">
+  <ul>
+    <% resume_items.each do |resume_item| %>
+      <li><span class="li-title"><%= resume_item.title %></span> <%= resume_item.time_there %> </li>
+      <span class="li-sub"><%= resume_item.tech_used %></span>
+      <ul>
+      <% resume_item.jobs.each do |job| %>
+        <li class="li-point"><%= job.task %> </li>
+      <% end %>  
+      </ul> 
+      <br>
+    <% end %>
+  </ul>
+</div>
+
+
+
+  
+

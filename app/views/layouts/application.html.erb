@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Bradley Campbell">
+    
+    <title><%= @page_title %></title>
+    <%= csrf_meta_tags %>
+
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
+    
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <meta name="keywords" content="<%= @seo_keywords %>"/>
+
+  </head>
+  <body>
+    <div class="site-wrapper animsition">
+        <div class="site-wrapper-inner">
+          <div class="cover-container <%=action_name%>-container">
+          
+            <%= render 'shared/background'%>
+
+            <%= render 'shared/shared_nav'%>
+
+            <%= yield %>
+
+            <%= render 'shared/application_footer'%>
+
+            <%= alerts %>
+            
+          </div>  
+        </div>
+      </div>
+  </body>
+</html>
+
+
+

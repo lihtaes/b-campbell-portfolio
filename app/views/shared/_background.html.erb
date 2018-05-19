@@ -1,0 +1,11 @@
+<div class="background <%= action_name %>"></div>
+<% page = action_name %>
+<%= video_tag(
+  "#{page}-bg.mp4",
+  class: 'background',
+  autoplay: true,
+  loop: true,
+  muted: true,
+  poster: "/assets/#{page}-bg.png" 
+  ) if action_name == "home"          
+  %>

@@ -1,0 +1,61 @@
+.background.resume { 
+  background: url('professional-filter2.jpg');
+}
+
+.profile-pic-col {
+  padding-right: 222px;
+}
+
+@media (max-width: 570px){
+  .profile-pic-col {
+    padding-right: 10px;
+  }
+}
+
+/*.resume-card {
+  padding:20px;
+  color: #333;
+}
+
+.resume-card li, .resume-card p, .resume-card img, .resume-card {
+  text-shadow: none;
+  opacity: 1;
+}*/
+
+.resume-items {
+  width:75%;
+  margin:0 auto;
+}
+
+@media (min-width: 62em) {
+.resume-container, .resume_mastfoot {
+    width: 75rem !important;
+}
+}
+
+@media (min-width: 500px) {
+.resume-container {
+    margin-top:100px;
+  }
+}
+.profile-pic {
+  border-radius: 100%;
+  width: 200px;
+  opacity: 1 !important;
+}
+
+.li-title {
+  font-weight: 600;
+  font-size: 1.1em;
+  opacity: 1;
+}
+
+.resume-lead {
+  font-size: 1rem;
+  margin-bottom:5px;
+  opacity: 1;
+}
+
+.li-point {
+  font-size: .9rem;
+}

@@ -1,0 +1,12 @@
+<div class="col-sm-8 blog-main">
+  
+  <hr class="title-hr">
+  <h2>Blogs for topic: <%= @topic.title.split.map(&:capitalize).join(' ') %></h2>
+
+  <%= paginate @blogs %>
+
+  <%= render @blogs %>
+
+  <%= paginate @blogs %>
+  
+</div><!-- end /.blog-main -->

@@ -1,0 +1,282 @@
+@import "bootstrap";
+@import "font-awesome";
+@import "gritter";
+@import "fonts";
+@import "shared_nav";
+@import "resume";
+@import "tech";
+@import "about";
+@import "animsition";
+
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+
+}
+
+body {
+  font-family: 'garamond-light';
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  background-color: #333;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+}
+
+.background.tech_news {
+  background-image: url('mac-air-wood');
+}
+
+.background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-repeat: no-repeat;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+}
+
+.background.home { 
+  background: url('home-bg.png');
+}
+
+.background.contact { 
+  background: url('contact-bg.jpg');
+}
+
+.background.about {
+  background: url('news-pen-coffee-wood2');
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+          box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 2rem;
+}
+
+
+/*
+ * Header
+ */
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-link {
+  padding: .25rem 0;
+  font-weight: bold;
+  color: rgba(255,255,255,.5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link {
+  margin-left: 1rem;
+}
+
+.active {
+  color: #fff;
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: bold;
+}
+
+@media (min-width: 200px) {
+  .cover {
+    margin-top:100px;
+  }
+}
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 40em) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 62em) {
+  .masthead {
+    width: 75rem;
+    left:20%;
+  }
+
+  .mastfoot,
+  .cover-container {
+    width: 55rem;
+  }
+}
+
+
+/*
+Custom Styles
+*/
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+
+@media (min-width: 62em) {
+.bg-inverse {
+  background-color: transparent !important;
+ }
+}
+
+
+.card-block {
+  color: #222;
+  text-align: left;
+}
+
+.auth-links a {
+  color: #222;
+
+}
+
+
+
+.nav-link {
+  color: rgba(255,255,255,.9);
+}
+
+
+
+.login > .card {
+  width:22rem;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+
+}
+
+.password > .card {
+  width:30rem;
+  margin:0 auto;
+  float:none;
+  margin-bottom: 10px;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.btn-outline-secondary {
+  color: #fff;
+  
+}
+.btn-outline-secondary:hover {
+  color: #555;
+  background-color: #fff
+}
+
+#home-button {
+  margin-top: 20px;
+}
+
+.app-nav span{
+  margin-right: 1em;
+}
+
+.card {
+  background: rgba(250, 250, 250, 0.8);
+}
+
+
+
+
+

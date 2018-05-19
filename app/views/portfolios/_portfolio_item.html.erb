@@ -1,0 +1,9 @@
+<div class="card col-lg-4 col-md-6 col-sm-12" data-id=" <%= portfolio_item.id %> ">
+  <div class="portfolio-index-img">
+    <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb') %>
+  </div>
+  <p class="card-text">
+    <%= link_to portfolio_item.title, portfolio_show_path(portfolio_item), class: "animsition-link" %>
+    <%= portfolio_item.subtitle %>
+  </p> 
+</div>

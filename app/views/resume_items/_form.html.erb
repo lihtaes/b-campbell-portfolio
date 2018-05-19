@@ -1,0 +1,35 @@
+<%= form_for(resume_item) do |f| %>
+  <% if resume_item.errors.any? %>
+   <% resume_item.errors.full_messages.each do |error| %>
+   <%= alert_generator error %>
+  <% end %>
+<% end %>
+
+<div class="form-group">
+  <%= f.label :title %>
+  <%= f.text_field :title, class: 'form-control' %>
+</div>
+
+<div class="form-group">
+  <%= f.label :time_there %>
+  <%= f.text_field :time_there, class: 'form-control' %>
+</div>
+
+<div class="form-group">
+  <%= f.label :tech_used %>
+  <%= f.text_field :tech_used, class: 'form-control' %>
+</div>
+<h3>Jobs for resume item:</h3>
+<div>
+    <%= f.fields_for :jobs do |job_form| %>
+      <%= render 'job_fields', f: job_form %>      
+    <% end %>
+    <div>
+      <%= link_to_add_association 'Add Job', f, :jobs %>
+    </div>
+</div>
+
+<div class="form-group">
+  <%= f.submit 'Submit Resume Item', class: 'btn btn-primary' %>
+</div>
+<% end %>

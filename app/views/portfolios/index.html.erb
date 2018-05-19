@@ -1,0 +1,12 @@
+
+
+<div class="album text-muted portfolio-background">
+  <div class="container">
+    <div class="row <%= "sortable" if logged_in?(:site_admin) %>">
+      <!-- render the partial with a custom name (manual collection vs standard collection), instead of 'portfolio' we had 
+      'portfolio_item' so we have to tell rails this using the following syntax: -->
+      <%= render partial: 'portfolio_item', collection: @portfolio_items %> 
+
+    </div>
+  </div>
+</div>

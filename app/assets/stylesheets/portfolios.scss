@@ -1,0 +1,154 @@
+@import "bootstrap";
+@import "jquery-ui";
+@import "font-awesome";
+@import "gritter";
+@import "shared_nav";
+@import "fonts";
+@import "animsition";
+
+body {
+  font-family: 'forum';
+  min-height: 75rem; /* Can be removed; just added for demo purposes */
+}
+
+body a:hover {
+  text-decoration: none !important;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar a {
+  margin-bottom: 0;
+  transition-duration: .4s;
+}
+
+.jumbotron {
+  background-image: url('/assets/black-white-mac-paper.jpg');
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+
+.jumbotron a {
+  margin-bottom: 0;
+  transition-duration: .4s;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+  color:#eee;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.album {
+  min-height: 50rem; /* Can be removed; just added for demo purposes */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+  margin-bottom: 50px;
+}
+
+.lead {
+  color:#eee;
+}
+
+.card {
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+.card > img {
+
+}
+
+.card-text {
+  font-size: 85%;
+  text-align: center;
+}
+
+.card a {
+  margin-bottom: 0;
+  transition-duration: .4s;
+}
+
+footer {
+  margin-top:50px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #292b2c; 
+  position: fixed;
+  width: 100%;
+  bottom:0px;
+}
+
+footer p, footer a {
+  margin-bottom: .25rem;
+  color: #eee;
+  transition-duration: .4s;
+}
+
+
+/*
+CUSTOM STYLES
+*/
+
+.portfolio-index-img > img {
+  margin-bottom: .75rem;
+  max-width:350px;
+  width:100%;
+  margin:0 auto;
+}
+
+.portfolio-show-img > img {
+  width: 100%;
+  max-width: 640px;
+}
+
+.btn-outline-secondary {
+  color: #999;
+  
+}
+
+.btn-outline-secondary:hover {
+  color: #555;
+  background-color: #fff;
+  border-color: #555;
+}
+
+.portfolio-container {
+  margin-top: 45px;
+  margin-bottom: 150px;
+}
+
+/*.portfolio-background {
+  background-image: url('/assets/abstract-nature.jpg');
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

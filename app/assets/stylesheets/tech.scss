@@ -1,0 +1,22 @@
+
+.tech-news {
+  color: black;
+  margin: 20px;
+  transition-duration: .4s;
+}
+
+.tech-news a {
+  color: green;
+}
+
+.tech-news > .card{
+  padding: 20px;
+  word-wrap: break-word;
+  
+}
+
+@media (min-width: 62em) {
+.tech_news-container, .tech_news_mastfoot {
+    width: 70rem;
+}
+}

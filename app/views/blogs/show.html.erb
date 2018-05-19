@@ -1,0 +1,21 @@
+<div class="col-sm-8 blog-main">
+  <h2> <%= @blog.title.split.map(&:capitalize).join(' ') %></h2>
+
+  <h5> <%= @blog.description %> </h5>
+
+  <%= render partial: "blogs/breadcrumb", locals: { blog: @blog } %>
+
+  <hr>
+  <p>
+    <%= markdown @blog.body %>
+  </p>
+
+  <%= render 'comments/comment_form' %>
+
+
+  <div id="comments" data-blog-id="<%= @blog.id %>" >
+  <%= render @blog.comments %>
+  </div>
+  
+  
+</div>

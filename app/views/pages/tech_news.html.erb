@@ -1,0 +1,16 @@
+<div class="inner cover tech-news-cover">
+  <h1 class="cover-heading">Tech News</h1>
+  <p>I could use this to look at the six most recent tweets with #rails tags, but let's be real... The only reason this is here is to show another example of making an API call, parsing through the data and running .collect on what I want, and then passing it to the view and running .each the tweets to wrap them in some HTML and throw in some styling.  With this one I used the Twitter GEM.</p>
+  <hr>
+  <div class="row">
+    <% @tweets.each do |tweet| %>
+      <div class="col-md-6">
+        <div class="tech-news">
+          <div class="card">
+            <%= twitter_parsor tweet %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+
+
+@media (min-width: 700px){
+.navbar-collapse {
+    width: auto !important;
+}
+}
+
+@media (max-width: 991px){
+  .container {
+    width:100%;
+  }
+
+}
+
+body a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  cursor: hand;
+}
+
+@media (max-width: 60em) {
+  .bg-inverse {
+  background-color: #333 !important;
+ }
+ }
+

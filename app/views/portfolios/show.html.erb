@@ -1,0 +1,31 @@
+<div class="container portfolio-container">
+  <div class="row">
+    <div class="col-md-7">
+      <div class="portfolio-show-img">
+        <%= image_tag portfolio_img(@portfolio_item.main_image, 'main') %>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <h1><%= @portfolio_item.title %></h1>
+
+      <em> <%= @portfolio_item.subtitle %> </em>
+
+      <p> <%= @portfolio_item.body %> </p>
+
+      <p> <%=  link_to 'Click here to see the project', @portfolio_item.link, class: "animsition-link" if @portfolio_item.link %> </p>
+
+      <h3>Techonologies Used</h3>
+
+      <% @portfolio_item.technologies.each do |t| %>
+
+      <p> <%= t.name %> </p>
+
+      <% end %>
+      <% if logged_in?(:site_admin) %>
+      <div>
+        <%= link_to 'edit item', edit_portfolio_path(@portfolio_item), class: 'btn btn-warning animsition-link' %>
+      </div>
+      <%end%>
+    </div>
+  </div>
+</div>

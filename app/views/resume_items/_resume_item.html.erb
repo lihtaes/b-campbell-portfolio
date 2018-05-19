@@ -1,0 +1,5 @@
+<div class="blog-post">
+    <h3 class="blog-post-title"><%= link_to resume_item.title.split.map(&:capitalize).join(' '), edit_resume_item_path(resume_item), class: "animsition-link" %></h3> 
+    <%= render partial: 'resume_items/admin_actions', locals: { resume_item: resume_item } %>
+    <hr>
+</div>           

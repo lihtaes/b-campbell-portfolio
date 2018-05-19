@@ -1,0 +1,8 @@
+<% if logged_in?(:site_admin) %>
+  <p class="blog-post-meta">
+    <%= link_to 'Edit', edit_resume_item_path(resume_item), class: "animsition-link" %> /
+    <%= link_to 'Destroy', resume_item, method: :delete, data: { confirm: 'Are you sure?' } %>   
+  </p>
+<% end %>
+
+ 

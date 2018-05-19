@@ -1,0 +1,9 @@
+<% if logged_in?(:site_admin) %>
+  <p class="blog-post-meta">
+    <%= link_to blog.status.split.map(&:capitalize).join(' '), toggle_status_blog_path(blog) %> /
+    <%= link_to 'Edit', edit_blog_path(blog), class: "animsition-link" %> /
+    <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>   
+  </p>
+<% end %>
+
+ 
