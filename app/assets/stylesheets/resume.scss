@@ -12,14 +12,6 @@
   }
 }
 
-@media (max-width: 1000px) {
-  .resume-items {
-    width: 386px;
-    height: auto;
-    overflow-y: inherit;
-  }
-}
-
 .resume-items {
   width:75%;
   margin:0 auto;
@@ -36,6 +28,7 @@
 @media (min-width: 500px) {
 .resume-container {
     margin-top:100px;
+    width: 386px;
   }
 }
 .profile-pic {
