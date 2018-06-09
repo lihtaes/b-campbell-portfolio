@@ -34,7 +34,7 @@ module ApplicationHelper
       },
             {
         url: resume_path,
-        title: 'resume'
+        title: 'experience'
       },
             {
         url: portfolios_path,

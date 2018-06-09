@@ -12,19 +12,11 @@
   }
 }
 
-/*.resume-card {
-  padding:20px;
-  color: #333;
-}
-
-.resume-card li, .resume-card p, .resume-card img, .resume-card {
-  text-shadow: none;
-  opacity: 1;
-}*/
-
 .resume-items {
   width:75%;
   margin:0 auto;
+  overflow-y: scroll;
+  height: 400px;
 }
 
 @media (min-width: 62em) {
