@@ -52,3 +52,13 @@
 .li-point {
   font-size: .9rem;
 }
+
+@media (max-width: 400px) {
+  .cover {
+    width: 386px;
+  }
+  .resume-items {
+    overflow-y: none;
+    height: auto;
+  }
+}
