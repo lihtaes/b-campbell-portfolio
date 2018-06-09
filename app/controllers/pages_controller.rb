@@ -10,7 +10,7 @@ class PagesController < ApplicationController
   end
 
   def resume
-    @resume_items = ResumeItem.order("order")
+    @resume_items = ResumeItem.order("order ASC").all
   end
 
   def contact
