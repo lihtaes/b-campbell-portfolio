@@ -1,6 +1,6 @@
 <div class="blog-post">
     <h3 class="blog-post-title"><%= link_to blog.title.split.map(&:capitalize).join(' '), blog, class: "animsition-link" %></h3>
-    <p class="blog-post-meta">Topic: <%= blog.topic.title.split.map(&:capitalize).join(' ') %> | Published <%=distance_of_time_in_words(blog.created_at, Time.now) %> ago</p> 
+    <p class="blog-post-meta">Topic: <%= blog.topic.title.split.map(&:capitalize).join(' ') %></p> 
     <p class="blog-post-meta">
     <%= blog.description %>
     </p>

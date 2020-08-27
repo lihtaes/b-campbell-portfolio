@@ -175,7 +175,7 @@ GEM
       byebug (~> 9.0)
       pry (~> 0.10)
     public_suffix (2.0.5)
-    puma (3.6.2)
+    puma (3.12.6)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -312,4 +312,4 @@ RUBY VERSION
    ruby 2.4.0p0
 
 BUNDLED WITH
-   1.13.7
+   1.17.3

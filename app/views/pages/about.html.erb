@@ -4,19 +4,9 @@
   <div class="row">
     <div class="col-md-12">
       <div class="about-text">
-        <p>  I was born and raised in Arizona.  I've been a web developer for about six years now, and during that time I've worked on dozens of websites and web-applications. I knew I loved code the moment I laid eyes on it. With the rest of my time I'm an avid motorcycle rider, musician (singer), and family oriented man that values quality time and a little adventure.</p><br>
-        <p>Here's an example of an API call to instagram where I request my four most recent posts, parse through the data, pull out the urls to the thumb-nails and their respective widths, and populate img tags with some basic styling:</p>
+        <p>  Born and raised in Arizona, I've been in software for over seven years. During that time I've worked on dozens of websites, web-applications, mobile apps, and even MVC frameworks as a developer, lead, and even project manager. I knew I loved code the moment I laid eyes on it. With the rest of my time I'm an avid motorcycle rider, musician (singer), and family oriented man with high values and moral aptitude. </p><br>
+        
       </div>
     </div>
-  </div>
-
-  <div class="row">
-    <% @instagram.each do |photo| %>
-      <div class="col-md-3">
-        <div class="about-img">
-            <img src="<%= photo[0] %>" width="<%= photo[1] %>">
-        </div>
-      </div>
-    <% end %>
   </div>
 </div>

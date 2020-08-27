@@ -36,26 +36,26 @@ module ApplicationHelper
         url: resume_path,
         title: 'experience'
       },
-            {
-        url: portfolios_path,
-        title: 'portfolio'
-      }, 
+      #       {
+      #   url: portfolios_path,
+      #   title: 'portfolio'
+      # }, 
             {
         url: about_me_path,
         title: 'about-me'
+      },
+      #       {
+      #   url: tech_news_path,
+      #   title: 'tech-news'
+      # },
+            {
+        url: blogs_path,
+        title: 'blog'
       },
             {
         url: contact_path,
         title: 'contact'
       },
-            {
-        url: tech_news_path,
-        title: 'tech-news'
-      },
-            {
-        url: blogs_path,
-        title: 'blog'
-      }
     ]
 
     resume_items = {url: resume_items_path, title: "resume_items"}

@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   end
 
   def about
-    @instagram = SocialTool.instagram_search
+    # @instagram = SocialTool.instagram_search
     @skills = Skill.all
   end
 
