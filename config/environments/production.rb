@@ -86,7 +86,7 @@ Rails.application.configure do
 
 
   config.action_cable.allowed_request_origins = ['https://bncampbell.com', 'http://bncampbell.com', 'http://b-campbell-portfolio.herokuapp.com', 'https://b-campbell-portfolio.herokuapp.com']
-  config.action_cable.url = ['wss://bncampbell.com/cable', 'wss://b-campbell-portfolio.herokuapp.com']
+  config.action_cable.url = ['wss://bncampbell.com/cable', 'wss://b-campbell-portfolio.herokuapp.com/cable']
 
 
 
