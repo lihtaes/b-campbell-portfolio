@@ -23,7 +23,7 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = true
+  config.assets.compile = false
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
@@ -85,8 +85,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
 
-  config.action_cable.allowed_request_origins = ['https://bncampbell.com', 'http://bncampbell.com', 'http://b-campbell-portfolio.herokuapp.com', 'https://b-campbell-portfolio.herokuapp.com']
-  config.action_cable.url = ['wss://bncampbell.com/cable', 'wss://b-campbell-portfolio.herokuapp.com/cable']
+  config.action_cable.allowed_request_origins = ['https://www.bncampbell.com', 'http://www.bncampbell.com', 'http://bncampbell.com', 'https://bncampbell.com', 'http://b-campbell-portfolio.herokuapp.com', 'https://b-campbell-portfolio.herokuapp.com']
+  config.action_cable.url = ['wss://bncampbell.com/cable', 'wss://www.bncampbell.com/cable', 'wss://b-campbell-portfolio.herokuapp.com/cable', 'wss://www.b-campbell-portfolio.herokuapp.com/cable']
 
 
 
