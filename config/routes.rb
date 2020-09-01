@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   get 'resume_item/:id', to: 'resume_items#show', as: 'resume_item_show'
 
-  get 'experience', to: 'pages#resume'
+  get 'resume', to: 'pages#resume', path: 'experience'
   get 'contact', to: 'pages#contact'
   get 'tech-news', to: 'pages#tech_news'
   get 'about-me', to: 'pages#about'
